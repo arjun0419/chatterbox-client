@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>chatterbox</title>
+    <!-- <script src="bower_components/bootstrap/dist/bootstrap.css"></script> -->
     <link rel="stylesheet" href="styles/styles.css">
 
     <!-- dependencies -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+
     <script>
       // YOU DO NOT NEED TO EDIT THIS CODE
       if (!/(&|\?)username=/.test(window.location.search)) {
@@ -26,6 +29,13 @@
     <div id="main">
       <h1>chatterbox</h1>
       <!-- Your HTML goes here! -->
+      <form>
+        <div>
+          <label for="messageInput">Message:</label>
+          <input type="text" id="messageInput" name="message" value="message?" onsubmit="newMessage()">
+          <input type ='submit'/>
+        </div>
+      </form>
     </div>
     <div id="chats"></div>
   </body>
