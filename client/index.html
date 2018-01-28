@@ -8,7 +8,7 @@
 
     <!-- dependencies -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/underscore/underscore.js"></script>
+        <script src="bower_components/underscore/underscore.js"></script>
     <!-- your scripts -->
 
     <script src="env/config.js"></script>
@@ -32,14 +32,17 @@
         <div class = "messageBox" >
           <div class ="messageLabel">Message:</div>
           <input type="text" id="messageInput" name="message" placeholder="message?"></input>
-          <button id ="messageSubmit"></button>
+          <button type = 'submit' id ="messageSubmit"></button>
+        </div>
+        <div class = "roomBox" >
+          <div class ="roomLabel">Rooms:</div>
+          <select name ="rooms" id ="roomSelect">
+
+          </select>
         </div>
 
       <div class = 'rooms'>
-        <div class = "room lounge" onclick="getTheLounge()">Lounge</div>
-        <div class = "room coding" onclick="getCoding()">Coding</div>
-        <div class = "room philosophy" onclick="getPhilosophy()">Philosophy</div>
-        <div class = "room politics" onclick="getPolitics()">Politics</div>
+ <!--        <div class = "room lounge" onclick="getTheLounge()">Lounge</div> -->
       </div>
     </div>
     <div id="chats"></div>
